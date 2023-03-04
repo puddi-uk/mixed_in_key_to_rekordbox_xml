@@ -11,9 +11,12 @@ public class Main {
 
 	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
 
+		// UPDATE THIS TO POINT AT YOUR REKORDBOX.XML
 		String rekordboxXmlFileLocation = "E:\\PIONEER\\rekordbox.xml";
+		// UPDATE THIS TO CHANGE THE SCALE FORMAT.
+		ScaleFormat desiredScaleFormat = ScaleFormat.CAMELOT;
 
-		(new TonalityUpdater(rekordboxXmlFileLocation, ScaleFormat.CAMELOT)).update();
+		(new TonalityUpdater(rekordboxXmlFileLocation, desiredScaleFormat)).update();
 	}
 
 }

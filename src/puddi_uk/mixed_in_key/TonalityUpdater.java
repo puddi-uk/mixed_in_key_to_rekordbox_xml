@@ -26,7 +26,7 @@ import puddi_uk.mixed_in_key.TonalityHelper.ScaleFormat;
 public class TonalityUpdater {
 
 	// If true will always write an updated file even if no changes were made.
-	private static final boolean	FORCE_UPDATE			= false;
+	private static final boolean	FORCE_UPDATE			= true;
 	
 	private static final String		OUTPUT_FILE_NAME		= "puddi_uk_updated_rekordbox.xml";
 
@@ -118,7 +118,7 @@ public class TonalityUpdater {
 				continue;
 			}
 
-			if (trackMetadata.isTonalityDifference()) {
+			if (trackMetadata.isTonalityDifference() || FORCE_UPDATE) {
 				System.out.println("Updating tonality of: " + trackMetadata.getName() + " - " + trackMetadata.getArtist());
 				System.out.println("  " + trackMetadata.getTonality() + " => " + trackMetadata.getTonalityFromComments() + "\n");
 

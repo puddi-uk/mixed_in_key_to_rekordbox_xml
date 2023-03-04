@@ -2,7 +2,7 @@
 
 Assumes that if Mixed in Key has been used the Comments will start with the key/tonality it identified, e.g. "1A - Energy 6".
 
-For all tracks in the rekordbox.xml the Rekordbox tonality is compared with the tonality in the Comments and if it differs the one from the Comments is used.
+For all tracks in the rekordbox.xml the Rekordbox tonality is compared with the tonality in the Comments and if it differs then the one from the Comments is used instead.
 
 ## Instructions
 

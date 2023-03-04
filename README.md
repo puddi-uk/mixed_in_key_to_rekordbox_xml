@@ -1,4 +1,4 @@
-# Update Rekordbox keys/tonalities from added Mixed In Key comments.
+# Update Rekordbox keys/tonalities from Mixed In Key comments.
 
 Assumes that if Mixed in Key has been used the Comments will start with the key/tonality it identified, e.g. "1A - Energy 6".
 
